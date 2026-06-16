@@ -1,0 +1,96 @@
+{
+  "seed": 42,
+  "split": "val_unseen",
+  "num_episodes": 17,
+  "success_only": true,
+  "success_filter_source": "eval_out/navila-llama3-8b-8f/VLN-CE-v1/val_unseen",
+  "conditions": ["original", "goal_only"],
+  "note": "Phase 1 goal-only search probe. 'original' = unmodified route instruction (control). 'goal_only' = route stripped, landmark/goal retained. Episodes 218, 240, and 1011 dropped from the phase-0 set of 20.",
+  "episodes": [
+    {
+      "episode_id": "53",
+      "original": "Exit the living room and turn right into the kitchen. Turn left at the end of the counter and wait in the room across the hallway slightly to the left. ",
+      "goal_only": "Go to the kitchen and wait in the room across the hallway"
+    },
+    {
+      "episode_id": "60",
+      "original": "Walk up the stairs, then make a slight left, walking toward another set of stairs. Stop by the base of the stairs. ",
+      "goal_only": "Walk up the stairs, and look for another set of stairs. Stop by the base of the stairs."
+    },
+    {
+      "episode_id": "63",
+      "original": "Exit the bathroom, and take a right turn. Keep walking to the place with a clock hanging on the wall, and then make a hard left into a bedroom. Wait at the bedroom. ",
+      "goal_only": "Exit the bathroom, and look for the bedroom. Wait at the bedroom."
+    },
+    {
+      "episode_id": "190",
+      "original": "Walk past the kitchen and go behind the couch and take a right into the fitness room. Stop next to the treadmill. ",
+      "goal_only": "Look for the fitness room. Stop next to the treadmill."
+    },
+    {
+      "episode_id": "200",
+      "original": "Walk to the open door. Make a sharp right turn around the corner and walk through the open door into the room with grey tile. ",
+      "goal_only": "Look for the room with grey tile and wait there"
+    },
+    {
+      "episode_id": "288",
+      "original": "Go to the white rug\r\nGo to the brown rug\r\nGo to the dark brown chair\r\nGo to the sliding doors\r\nGo to the pool table. ",
+      "goal_only": "look for the pool table."
+    },
+    {
+      "episode_id": "431",
+      "original": "Move towards the table and down the hallway, with the table to your left. You'll be walking off the wood floor and on a red path. End promptly before the doorway where there is wood storage to the left hand size with a dark urn on top. ",
+      "goal_only": "Move towards the table and down the hallway. End promptly before the doorway where there is wood storage to the left hand size with a dark urn on top."
+    },
+    {
+      "episode_id": "464",
+      "original": "Walk past fridge. Walk up stairs. Wait on top of stair landing. ",
+      "goal_only": "Look for stairs, Wait on top of stair landing."
+    },
+    {
+      "episode_id": "507",
+      "original": "Leave the kitchen, and walk through the pantry. In the hall take a left, and take a right at the end of the hall. Stop next to the plan on the table in the entryway. ",
+      "goal_only": "Leave the kitchen, and look for the plan on the table in the entryway and stop neat that."
+    },
+    {
+      "episode_id": "777",
+      "original": "Go down the stairs and go into the door on your right. Wait by the toilet. ",
+      "goal_only": "Look for the toilet and Wait by the toilet."
+    },
+    {
+      "episode_id": "1088",
+      "original": "Stand with the wooden door behind you.  Walk straight, past the oven and through the door to the next room.  Walk through the room past the sink and microwaves.  Stop after passing through the last doorway of the room with the microwaves and into the hall. ",
+      "goal_only": "Look for room with microwaves and Stop after passing through the last doorway of the room with the microwaves and into the hall."
+    },
+    {
+      "episode_id": "1187",
+      "original": "walk straight past Tv, past fridge, up 5 stairs and stop at the top. ",
+      "goal_only": "look for the stairs and stop at the top of stairs."
+    },
+    {
+      "episode_id": "1254",
+      "original": "Walk up steps across patio and enter the house through the slider. Walk across living room and stop at kitchen. ",
+      "goal_only": "Look for the kitchen and stop at kitchen."
+    },
+    {
+      "episode_id": "1378",
+      "original": "Walk forward and make a right toward the massage room, and wait. ",
+      "goal_only": "Look for the massage room, and wait."
+    },
+    {
+      "episode_id": "1388",
+      "original": "Go straight then turn right and exit the hallway onto the kitchen/dining/living room. Wait near the couches straight ahead. ",
+      "goal_only": "Exit the hallway onto the kitchen/dining/living room. Wait near the couches."
+    },
+    {
+      "episode_id": "1389",
+      "original": "walk forward slightly, make a  right and walk toward the living room, and wait next to the black couches. ",
+      "goal_only": "Look for black couches and wait next to them."
+    },
+    {
+      "episode_id": "1683",
+      "original": "Walk passed the right of the bar, and turn left to walk through the kitchen. Stop once you reach the shelves on your right. ",
+      "goal_only": "Look for the kitchen and stop once you reach the shelves."
+    }
+  ]
+}

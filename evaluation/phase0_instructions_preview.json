@@ -1,0 +1,129 @@
+{
+  "seed": 42,
+  "split": "val_unseen",
+  "num_episodes": 20,
+  "success_only": true,
+  "success_filter_source": "eval_out/navila-llama3-8b-8f/VLN-CE-v1/val_unseen",
+  "episodes": [
+    {
+      "episode_id": "53",
+      "original": "Exit the living room and turn right into the kitchen. Turn left at the end of the counter and wait in the room across the hallway slightly to the left. ",
+      "short_budget": "Exit the living room and turn right into the kitchen. Turn left at the end of the counter and wait in the room across the hallway slightly to the left. You have 15 seconds.",
+      "long_budget": "Exit the living room and turn right into the kitchen. Turn left at the end of the counter and wait in the room across the hallway slightly to the left. You have 3 minutes."
+    },
+    {
+      "episode_id": "60",
+      "original": "Walk up the stairs, then make a slight left, walking toward another set of stairs. Stop by the base of the stairs. ",
+      "short_budget": "Walk up the stairs, then make a slight left, walking toward another set of stairs. Stop by the base of the stairs. You have 15 seconds.",
+      "long_budget": "Walk up the stairs, then make a slight left, walking toward another set of stairs. Stop by the base of the stairs. You have 3 minutes."
+    },
+    {
+      "episode_id": "63",
+      "original": "Exit the bathroom, and take a right turn. Keep walking to the place with a clock hanging on the wall, and then make a hard left into a bedroom. Wait at the bedroom. ",
+      "short_budget": "Exit the bathroom, and take a right turn. K/eep walking to the place with a clock hanging on the wall, and then make a hard left into a bedroom. Wait at the bedroom. You have 15 seconds.",
+      "long_budget": "Exit the bathroom, and take a right turn. Keep walking to the place with a clock hanging on the wall, and then make a hard left into a bedroom. Wait at the bedroom. You have 3 minutes."
+    },
+    {
+      "episode_id": "190",
+      "original": "Walk past the kitchen and go behind the couch and take a right into the fitness room. Stop next to the treadmill. ",
+      "short_budget": "Walk past the kitchen and go behind the couch and take a right into the fitness room. Stop next to the treadmill. You have 15 seconds.",
+      "long_budget": "Walk past the kitchen and go behind the couch and take a right into the fitness room. Stop next to the treadmill. You have 3 minutes."
+    },
+    {
+      "episode_id": "200",
+      "original": "Walk to the open door. Make a sharp right turn around the corner and walk through the open door into the room with grey tile. ",
+      "short_budget": "Walk to the open door. Make a sharp right turn around the corner and walk through the open door into the room with grey tile. You have 15 seconds.",
+      "long_budget": "Walk to the open door. Make a sharp right turn around the corner and walk through the open door into the room with grey tile. You have 3 minutes."
+    },
+    {
+      "episode_id": "218",
+      "original": "Leave the bedroom and take a left in the hallway. Go straight and go into the room that is the second on the left. Stop in the doorway to the room. ",
+      "short_budget": "Leave the bedroom and take a left in the hallway. Go straight and go into the room that is the second on the left. Stop in the doorway to the room. You have 15 seconds.",
+      "long_budget": "Leave the bedroom and take a left in the hallway. Go straight and go into the room that is the second on the left. Stop in the doorway to the room. You have 3 minutes."
+    },
+    {
+      "episode_id": "240",
+      "original": "Walk down the hallway and past the end table. Walk straight across the hallway past the pots. Walk straight and stop next to the end table. ",
+      "short_budget": "Walk down the hallway and past the end table. Walk straight across the hallway past the pots. Walk straight and stop next to the end table. You have 15 seconds.",
+      "long_budget": "Walk down the hallway and past the end table. Walk straight across the hallway past the pots. Walk straight and stop next to the end table. You have 3 minutes."
+    },
+    {
+      "episode_id": "288",
+      "original": "Go to the white rug\r\nGo to the brown rug\r\nGo to the dark brown chair\r\nGo to the sliding doors\r\nGo to the pool table. ",
+      "short_budget": "Go to the white rug\r\nGo to the brown rug\r\nGo to the dark brown chair\r\nGo to the sliding doors\r\nGo to the pool table. You have 15 seconds.",
+      "long_budget": "Go to the white rug\r\nGo to the brown rug\r\nGo to the dark brown chair\r\nGo to the sliding doors\r\nGo to the pool table. You have 3 minutes."
+    },
+    {
+      "episode_id": "431",
+      "original": "Move towards the table and down the hallway, with the table to your left. You'll be walking off the wood floor and on a red path. End promptly before the doorway where there is wood storage to the left hand size with a dark urn on top. ",
+      "short_budget": "Move towards the table and down the hallway, with the table to your left. You'll be walking off the wood floor and on a red path. End promptly before the doorway where there is wood storage to the left hand size with a dark urn on top. You have 15 seconds.",
+      "long_budget": "Move towards the table and down the hallway, with the table to your left. You'll be walking off the wood floor and on a red path. End promptly before the doorway where there is wood storage to the left hand size with a dark urn on top. You have 3 minutes."
+    },
+    {
+      "episode_id": "464",
+      "original": "Walk past fridge. Walk up stairs. Wait on top of stair landing. ",
+      "short_budget": "Walk past fridge. Walk up stairs. Wait on top of stair landing. You have 15 seconds.",
+      "long_budget": "Walk past fridge. Walk up stairs. Wait on top of stair landing. You have 3 minutes."
+    },
+    {
+      "episode_id": "507",
+      "original": "Leave the kitchen, and walk through the pantry. In the hall take a left, and take a right at the end of the hall. Stop next to the plan on the table in the entryway. ",
+      "short_budget": "Leave the kitchen, and walk through the pantry. In the hall take a left, and take a right at the end of the hall. Stop next to the plan on the table in the entryway. You have 15 seconds.",
+      "long_budget": "Leave the kitchen, and walk through the pantry. In the hall take a left, and take a right at the end of the hall. Stop next to the plan on the table in the entryway. You have 3 minutes."
+    },
+    {
+      "episode_id": "777",
+      "original": "Go down the stairs and go into the door on your right. Wait by the toilet. ",
+      "short_budget": "Go down the stairs and go into the door on your right. Wait by the toilet. You have 15 seconds.",
+      "long_budget": "Go down the stairs and go into the door on your right. Wait by the toilet. You have 3 minutes."
+    },
+    {
+      "episode_id": "1011",
+      "original": "Stand so the foot of the bed is to your right and walk out of the room, going past a big mirror on the way.  Once outside walk straight until you see an open door to a bedroom on your left.  Walk into the room and stand at the foot of the bed with the bed behind you.  Walk through the doorway on the left into the closet.  Stop in this doorway. ",
+      "short_budget": "Stand so the foot of the bed is to your right and walk out of the room, going past a big mirror on the way.  Once outside walk straight until you see an open door to a bedroom on your left.  Walk into the room and stand at the foot of the bed with the bed behind you.  Walk through the doorway on the left into the closet.  Stop in this doorway. You have 15 seconds.",
+      "long_budget": "Stand so the foot of the bed is to your right and walk out of the room, going past a big mirror on the way.  Once outside walk straight until you see an open door to a bedroom on your left.  Walk into the room and stand at the foot of the bed with the bed behind you.  Walk through the doorway on the left into the closet.  Stop in this doorway. You have 3 minutes."
+    },
+    {
+      "episode_id": "1088",
+      "original": "Stand with the wooden door behind you.  Walk straight, past the oven and through the door to the next room.  Walk through the room past the sink and microwaves.  Stop after passing through the last doorway of the room with the microwaves and into the hall. ",
+      "short_budget": "Stand with the wooden door behind you.  Walk straight, past the oven and through the door to the next room.  Walk through the room past the sink and microwaves.  Stop after passing through the last doorway of the room with the microwaves and into the hall. You have 15 seconds.",
+      "long_budget": "Stand with the wooden door behind you.  Walk straight, past the oven and through the door to the next room.  Walk through the room past the sink and microwaves.  Stop after passing through the last doorway of the room with the microwaves and into the hall. You have 3 minutes."
+    },
+    {
+      "episode_id": "1187",
+      "original": "walk straight past Tv, past fridge, up 5 stairs and stop at the top. ",
+      "short_budget": "walk straight past Tv, past fridge, up 5 stairs and stop at the top. You have 15 seconds.",
+      "long_budget": "walk straight past Tv, past fridge, up 5 stairs and stop at the top. You have 3 minutes."
+    },
+    {
+      "episode_id": "1254",
+      "original": "Walk up steps across patio and enter the house through the slider. Walk across living room and stop at kitchen. ",
+      "short_budget": "Walk up steps across patio and enter the house through the slider. Walk across living room and stop at kitchen. You have 15 seconds.",
+      "long_budget": "Walk up steps across patio and enter the house through the slider. Walk across living room and stop at kitchen. You have 3 minutes."
+    },
+    {
+      "episode_id": "1378",
+      "original": "Walk forward and make a right toward the massage room, and wait. ",
+      "short_budget": "Walk forward and make a right toward the massage room, and wait. You have 15 seconds.",
+      "long_budget": "Walk forward and make a right toward the massage room, and wait. You have 3 minutes."
+    },
+    {
+      "episode_id": "1388",
+      "original": "Go straight then turn right and exit the hallway onto the kitchen/dining/living room. Wait near the couches straight ahead. ",
+      "short_budget": "Go straight then turn right and exit the hallway onto the kitchen/dining/living room. Wait near the couches straight ahead. You have 15 seconds.",
+      "long_budget": "Go straight then turn right and exit the hallway onto the kitchen/dining/living room. Wait near the couches straight ahead. You have 3 minutes."
+    },
+    {
+      "episode_id": "1389",
+      "original": "walk forward slightly, make a  right and walk toward the living room, and wait next to the black couches. ",
+      "short_budget": "walk forward slightly, make a  right and walk toward the living room, and wait next to the black couches. You have 15 seconds.",
+      "long_budget": "walk forward slightly, make a  right and walk toward the living room, and wait next to the black couches. You have 3 minutes."
+    },
+    {
+      "episode_id": "1683",
+      "original": "Walk passed the right of the bar, and turn left to walk through the kitchen. Stop once you reach the shelves on your right. ",
+      "short_budget": "Walk passed the right of the bar, and turn left to walk through the kitchen. Stop once you reach the shelves on your right. You have 15 seconds.",
+      "long_budget": "Walk passed the right of the bar, and turn left to walk through the kitchen. Stop once you reach the shelves on your right. You have 3 minutes."
+    }
+  ]
+}
