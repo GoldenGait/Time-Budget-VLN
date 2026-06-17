@@ -15,6 +15,15 @@ so a budget threshold can later flip the target behavior between
 This is geometry/cost generation only — no instructions or training labels
 yet (that's the next phase).
 
+## Example: episode 0 (sink near, toilet far)
+
+| tight budget -> nearest only | loose budget -> both |
+|---|---|
+| ![near](gifs/ep0_near_GdvgFV5R1Z5.gif) | ![both](gifs/ep0_both_GdvgFV5R1Z5.gif) |
+
+Each is [RGB | depth | top-down map with trajectory + goal markers]. Full-resolution
+mp4 source is in `videos/`.
+
 ## Layout
 - `scripts/generate_episodes.py` — samples episodes for one scene, dumps JSON + cost histograms
 - `scripts/render_episode_video.py` — replays the expert on a generated episode as an
@@ -23,8 +32,8 @@ yet (that's the next phase).
 - `scripts/render_scene.py` — recon tool: top-down map of a scene with whitelisted goal
   objects marked, used to pick/inspect candidate scenes
 - `data/episodes_GdvgFV5R1Z5.json` — 20 generated episodes for the starter scene
-- `videos/ep0_{near,both}_GdvgFV5R1Z5.mp4` — the signature-flip example: same scene,
-  same two goals (sink, toilet), tight budget reaches one goal, loose budget reaches both
+- `videos/ep0_{near,both}_GdvgFV5R1Z5.mp4` — full-resolution source for the gifs above
+- `gifs/ep0_{near,both}_GdvgFV5R1Z5.gif` — same clips, downsized for inline preview
 - `maps/*_topdown.png` — top-down maps used to pick the starter scene
 
 ## Starter scene
