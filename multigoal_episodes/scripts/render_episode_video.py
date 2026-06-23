@@ -186,7 +186,9 @@ def main():
         frames.append(banner(frame, f"{title} | step {i}/{len(snaps)-1}"))
 
     out = args.out or f"multigoal_episodes/videos/ep{args.ep}_{args.mode}_{args.scene}.mp4"
-    imageio.mimsave(out, frames, fps=FPS, macro_block_size=1)
+    # macro_block_size=2 pads odd width/height up to even (libx264 + yuv420p
+    # needs even dims; some scenes' map panel makes the triptych width odd)
+    imageio.mimsave(out, frames, fps=FPS, macro_block_size=2)
     print(f"{len(frames)} frames -> {out}")
     sim.close()
 
