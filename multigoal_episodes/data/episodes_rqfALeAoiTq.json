@@ -1,0 +1,3231 @@
+{
+  "scene": "rqfALeAoiTq",
+  "seed": 0,
+  "split": "test_heldout",
+  "action_unit": {
+    "forward_m": 0.25,
+    "turn_deg": 15.0,
+    "success_distance": 0.2
+  },
+  "episodes": [
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          12.070688247680664,
+          -3.169326066970825,
+          2.0760345458984375
+        ],
+        "yaw": -0.7308754819569288
+      },
+      "G1": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "G2": {
+        "id": 347,
+        "category": "sofa",
+        "center": [
+          1.728119969367981,
+          -2.889479875564575,
+          -2.0064799785614014
+        ],
+        "navpoint": [
+          1.4959992170333862,
+          -3.169326066970825,
+          -1.3681482076644897
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 46,
+        "S_G2": 71
+      },
+      "nearest_only": 46,
+      "both_tour": 84,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "cabinet",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 46,
+          "reached": true,
+          "final_dist": 0.011517931707203388
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            46
+          ],
+          "steps": 84,
+          "reached": true,
+          "final_dist": 0.09040550887584686
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep0",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          11.73902416229248,
+          -3.169326066970825,
+          -1.1183983087539673
+        ],
+        "yaw": -2.7735988378314134
+      },
+      "G1": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "G2": {
+        "id": 346,
+        "category": "sofa",
+        "center": [
+          -0.25380003452301025,
+          -2.9002699851989746,
+          -1.7514796257019043
+        ],
+        "navpoint": [
+          -0.16455399990081787,
+          -3.169326066970825,
+          -1.1128947734832764
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 52,
+        "S_G2": 78
+      },
+      "nearest_only": 52,
+      "both_tour": 91,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "cabinet",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 52,
+          "reached": true,
+          "final_dist": 0.10875706374645233
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            52
+          ],
+          "steps": 91,
+          "reached": true,
+          "final_dist": 0.1974344253540039
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep1",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          4.470455646514893,
+          -3.169326066970825,
+          1.433549165725708
+        ],
+        "yaw": -2.1973589152253594
+      },
+      "G1": {
+        "id": 347,
+        "category": "sofa",
+        "center": [
+          1.728119969367981,
+          -2.889479875564575,
+          -2.0064799785614014
+        ],
+        "navpoint": [
+          1.4959992170333862,
+          -3.169326066970825,
+          -1.3681482076644897
+        ]
+      },
+      "G2": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 32,
+        "S_G2": 9
+      },
+      "nearest_only": 9,
+      "both_tour": 43,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "cabinet",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 9,
+          "reached": true,
+          "final_dist": 0.20917822420597076
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            9
+          ],
+          "steps": 43,
+          "reached": true,
+          "final_dist": 0.14159026741981506
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep2",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          1.5296920537948608,
+          -3.085813522338867,
+          -0.698906660079956
+        ],
+        "yaw": -0.016193681844320018
+      },
+      "G1": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "G2": {
+        "id": 344,
+        "category": "sofa",
+        "center": [
+          2.8556199073791504,
+          -2.865769863128662,
+          -0.4093592166900635
+        ],
+        "navpoint": [
+          2.130647659301758,
+          -3.169326066970825,
+          -0.14085090160369873
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 35,
+        "S_G2": 12
+      },
+      "nearest_only": 12,
+      "both_tour": 41,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "sofa",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 12,
+          "reached": true,
+          "final_dist": 0.08157628774642944
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "sofa",
+            "cabinet"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            12
+          ],
+          "steps": 41,
+          "reached": true,
+          "final_dist": 0.009168121963739395
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep3",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          5.264454364776611,
+          -3.169326066970825,
+          1.7257800102233887
+        ],
+        "yaw": -3.049190214308483
+      },
+      "G1": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "G2": {
+        "id": 344,
+        "category": "sofa",
+        "center": [
+          2.8556199073791504,
+          -2.865769863128662,
+          -0.4093592166900635
+        ],
+        "navpoint": [
+          2.130647659301758,
+          -3.169326066970825,
+          -0.14085090160369873
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 15,
+        "S_G2": 27
+      },
+      "nearest_only": 15,
+      "both_tour": 41,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "cabinet",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 15,
+          "reached": true,
+          "final_dist": 0.2118871957063675
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            15
+          ],
+          "steps": 41,
+          "reached": true,
+          "final_dist": 0.17956767976284027
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep4",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          1.3555376529693604,
+          -3.053926944732666,
+          -0.23616406321525574
+        ],
+        "yaw": -2.9633678082757333
+      },
+      "G1": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "G2": {
+        "id": 347,
+        "category": "sofa",
+        "center": [
+          1.728119969367981,
+          -2.889479875564575,
+          -2.0064799785614014
+        ],
+        "navpoint": [
+          1.4959992170333862,
+          -3.169326066970825,
+          -1.3681482076644897
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 26,
+        "S_G2": 15
+      },
+      "nearest_only": 15,
+      "both_tour": 51,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "sofa",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 15,
+          "reached": true,
+          "final_dist": 0.14697130024433136
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "sofa",
+            "cabinet"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            15
+          ],
+          "steps": 51,
+          "reached": true,
+          "final_dist": 0.03388741612434387
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep5",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          2.6953370571136475,
+          -3.169326066970825,
+          2.7872791290283203
+        ],
+        "yaw": 0.33986064851304176
+      },
+      "G1": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "G2": {
+        "id": 347,
+        "category": "sofa",
+        "center": [
+          1.728119969367981,
+          -2.889479875564575,
+          -2.0064799785614014
+        ],
+        "navpoint": [
+          1.4959992170333862,
+          -3.169326066970825,
+          -1.3681482076644897
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 18,
+        "S_G2": 20
+      },
+      "nearest_only": 18,
+      "both_tour": 55,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "cabinet",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 18,
+          "reached": true,
+          "final_dist": 0.2191617488861084
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            18
+          ],
+          "steps": 55,
+          "reached": true,
+          "final_dist": 0.1278274804353714
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep6",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          12.330456733703613,
+          -3.169326066970825,
+          -0.9517849087715149
+        ],
+        "yaw": 0.5901431635644321
+      },
+      "G1": {
+        "id": 347,
+        "category": "sofa",
+        "center": [
+          1.728119969367981,
+          -2.889479875564575,
+          -2.0064799785614014
+        ],
+        "navpoint": [
+          1.4959992170333862,
+          -3.169326066970825,
+          -1.3681482076644897
+        ]
+      },
+      "G2": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 81,
+        "S_G2": 53
+      },
+      "nearest_only": 53,
+      "both_tour": 90,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "cabinet",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 53,
+          "reached": true,
+          "final_dist": 0.10066977143287659
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            53
+          ],
+          "steps": 90,
+          "reached": true,
+          "final_dist": 0.09488251060247421
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep7",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          0.47400712966918945,
+          -3.169326066970825,
+          2.4330859184265137
+        ],
+        "yaw": -2.3447772999628302
+      },
+      "G1": {
+        "id": 347,
+        "category": "sofa",
+        "center": [
+          1.728119969367981,
+          -2.889479875564575,
+          -2.0064799785614014
+        ],
+        "navpoint": [
+          1.4959992170333862,
+          -3.169326066970825,
+          -1.3681482076644897
+        ]
+      },
+      "G2": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 23,
+        "S_G2": 25
+      },
+      "nearest_only": 23,
+      "both_tour": 64,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "sofa",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 23,
+          "reached": true,
+          "final_dist": 0.192092165350914
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            25
+          ],
+          "steps": 64,
+          "reached": true,
+          "final_dist": 0.11526262015104294
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep8",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          4.734100818634033,
+          -3.169326066970825,
+          2.589176893234253
+        ],
+        "yaw": -2.7679683699506468
+      },
+      "G1": {
+        "id": 346,
+        "category": "sofa",
+        "center": [
+          -0.25380003452301025,
+          -2.9002699851989746,
+          -1.7514796257019043
+        ],
+        "navpoint": [
+          -0.16455399990081787,
+          -3.169326066970825,
+          -1.1128947734832764
+        ]
+      },
+      "G2": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 38,
+        "S_G2": 20
+      },
+      "nearest_only": 20,
+      "both_tour": 60,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "cabinet",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "steps": 20,
+          "reached": true,
+          "final_dist": 0.12904195487499237
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            20
+          ],
+          "steps": 60,
+          "reached": true,
+          "final_dist": 0.14663684368133545
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep9",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          4.999940872192383,
+          -3.169326066970825,
+          2.5641775131225586
+        ],
+        "yaw": 3.028135248356281
+      },
+      "G1": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "G2": {
+        "id": 346,
+        "category": "sofa",
+        "center": [
+          -0.25380003452301025,
+          -2.9002699851989746,
+          -1.7514796257019043
+        ],
+        "navpoint": [
+          -0.16455399990081787,
+          -3.169326066970825,
+          -1.1128947734832764
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 21,
+        "S_G2": 38
+      },
+      "nearest_only": 21,
+      "both_tour": 58,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "cabinet",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 21,
+          "reached": true,
+          "final_dist": 0.060382943600416183
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            21
+          ],
+          "steps": 58,
+          "reached": true,
+          "final_dist": 0.1555657833814621
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep10",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          1.644228219985962,
+          -3.169326066970825,
+          2.884253978729248
+        ],
+        "yaw": 1.8200234741852706
+      },
+      "G1": {
+        "id": 344,
+        "category": "sofa",
+        "center": [
+          2.8556199073791504,
+          -2.865769863128662,
+          -0.4093592166900635
+        ],
+        "navpoint": [
+          2.130647659301758,
+          -3.169326066970825,
+          -0.14085090160369873
+        ]
+      },
+      "G2": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 22,
+        "S_G2": 28
+      },
+      "nearest_only": 22,
+      "both_tour": 56,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "sofa",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "steps": 22,
+          "reached": true,
+          "final_dist": 0.09072698652744293
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "sofa",
+            "cabinet"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            22
+          ],
+          "steps": 56,
+          "reached": true,
+          "final_dist": 0.09722510725259781
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep11",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          1.9694843292236328,
+          -3.169326066970825,
+          2.754847288131714
+        ],
+        "yaw": 1.7667720311647503
+      },
+      "G1": {
+        "id": 346,
+        "category": "sofa",
+        "center": [
+          -0.25380003452301025,
+          -2.9002699851989746,
+          -1.7514796257019043
+        ],
+        "navpoint": [
+          -0.16455399990081787,
+          -3.169326066970825,
+          -1.1128947734832764
+        ]
+      },
+      "G2": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 24,
+        "S_G2": 29
+      },
+      "nearest_only": 24,
+      "both_tour": 69,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "sofa",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "steps": 24,
+          "reached": true,
+          "final_dist": 0.18852399289608002
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "sofa",
+            "cabinet"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            24
+          ],
+          "steps": 69,
+          "reached": true,
+          "final_dist": 0.040152840316295624
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep12",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          1.1985154151916504,
+          -3.169326066970825,
+          0.03012138605117798
+        ],
+        "yaw": 2.0175502070911824
+      },
+      "G1": {
+        "id": 347,
+        "category": "sofa",
+        "center": [
+          1.728119969367981,
+          -2.889479875564575,
+          -2.0064799785614014
+        ],
+        "navpoint": [
+          1.4959992170333862,
+          -3.169326066970825,
+          -1.3681482076644897
+        ]
+      },
+      "G2": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 14,
+        "S_G2": 30
+      },
+      "nearest_only": 14,
+      "both_tour": 48,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "sofa",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 14,
+          "reached": true,
+          "final_dist": 0.19350682199001312
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "sofa",
+            "cabinet"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            14
+          ],
+          "steps": 48,
+          "reached": true,
+          "final_dist": 0.20294789969921112
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep13",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          11.688203811645508,
+          -3.169326066970825,
+          0.48744305968284607
+        ],
+        "yaw": 2.1600998102221913
+      },
+      "G1": {
+        "id": 344,
+        "category": "sofa",
+        "center": [
+          2.8556199073791504,
+          -2.865769863128662,
+          -0.4093592166900635
+        ],
+        "navpoint": [
+          2.130647659301758,
+          -3.169326066970825,
+          -0.14085090160369873
+        ]
+      },
+      "G2": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 61,
+        "S_G2": 41
+      },
+      "nearest_only": 41,
+      "both_tour": 70,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "cabinet",
+          "actions": [
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 41,
+          "reached": true,
+          "final_dist": 0.04410269111394882
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            41
+          ],
+          "steps": 70,
+          "reached": true,
+          "final_dist": 0.20518895983695984
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep14",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          9.034431457519531,
+          -3.169326066970825,
+          2.070161819458008
+        ],
+        "yaw": 2.9781318484005785
+      },
+      "G1": {
+        "id": 346,
+        "category": "sofa",
+        "center": [
+          -0.25380003452301025,
+          -2.9002699851989746,
+          -1.7514796257019043
+        ],
+        "navpoint": [
+          -0.16455399990081787,
+          -3.169326066970825,
+          -1.1128947734832764
+        ]
+      },
+      "G2": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 55,
+        "S_G2": 29
+      },
+      "nearest_only": 29,
+      "both_tour": 68,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "cabinet",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 29,
+          "reached": true,
+          "final_dist": 0.10590419173240662
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            29
+          ],
+          "steps": 68,
+          "reached": true,
+          "final_dist": 0.19854779541492462
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep15",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          1.413273811340332,
+          -3.0026307106018066,
+          -0.38345539569854736
+        ],
+        "yaw": 0.44412560795354006
+      },
+      "G1": {
+        "id": 344,
+        "category": "sofa",
+        "center": [
+          2.8556199073791504,
+          -2.865769863128662,
+          -0.4093592166900635
+        ],
+        "navpoint": [
+          2.130647659301758,
+          -3.169326066970825,
+          -0.14085090160369873
+        ]
+      },
+      "G2": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 13,
+        "S_G2": 37
+      },
+      "nearest_only": 13,
+      "both_tour": 40,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "sofa",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "steps": 13,
+          "reached": true,
+          "final_dist": 0.06931427866220474
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "sofa",
+            "cabinet"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            13
+          ],
+          "steps": 40,
+          "reached": true,
+          "final_dist": 0.013491290621459484
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep16",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          6.439226150512695,
+          -3.169326066970825,
+          1.9948136806488037
+        ],
+        "yaw": 0.9176279462588175
+      },
+      "G1": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "G2": {
+        "id": 346,
+        "category": "sofa",
+        "center": [
+          -0.25380003452301025,
+          -2.9002699851989746,
+          -1.7514796257019043
+        ],
+        "navpoint": [
+          -0.16455399990081787,
+          -3.169326066970825,
+          -1.1128947734832764
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 13,
+        "S_G2": 37
+      },
+      "nearest_only": 13,
+      "both_tour": 50,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "cabinet",
+          "actions": [
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 13,
+          "reached": true,
+          "final_dist": 0.12444204092025757
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            13
+          ],
+          "steps": 50,
+          "reached": true,
+          "final_dist": 0.2101026475429535
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep17",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          8.959809303283691,
+          -3.169326066970825,
+          2.1516621112823486
+        ],
+        "yaw": -2.678418647225605
+      },
+      "G1": {
+        "id": 344,
+        "category": "sofa",
+        "center": [
+          2.8556199073791504,
+          -2.865769863128662,
+          -0.4093592166900635
+        ],
+        "navpoint": [
+          2.130647659301758,
+          -3.169326066970825,
+          -0.14085090160369873
+        ]
+      },
+      "G2": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 49,
+        "S_G2": 35
+      },
+      "nearest_only": 35,
+      "both_tour": 62,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "cabinet",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 35,
+          "reached": true,
+          "final_dist": 0.07882407307624817
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            35
+          ],
+          "steps": 62,
+          "reached": true,
+          "final_dist": 0.16928082704544067
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep18",
+      "split": "test_heldout"
+    },
+    {
+      "scene": "rqfALeAoiTq",
+      "start_pose": {
+        "position": [
+          3.670598268508911,
+          -3.169326066970825,
+          1.09939444065094
+        ],
+        "yaw": 2.9878618231307454
+      },
+      "G1": {
+        "id": 345,
+        "category": "cabinet",
+        "center": [
+          5.525100231170654,
+          -2.798710346221924,
+          0.6682238578796387
+        ],
+        "navpoint": [
+          5.155910491943359,
+          -3.169326066970825,
+          0.7707765102386475
+        ]
+      },
+      "G2": {
+        "id": 344,
+        "category": "sofa",
+        "center": [
+          2.8556199073791504,
+          -2.865769863128662,
+          -0.4093592166900635
+        ],
+        "navpoint": [
+          2.130647659301758,
+          -3.169326066970825,
+          -0.14085090160369873
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 14,
+        "S_G2": 21
+      },
+      "nearest_only": 14,
+      "both_tour": 49,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "cabinet",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 14,
+          "reached": true,
+          "final_dist": 0.046690888702869415
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "cabinet",
+            "sofa"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            14
+          ],
+          "steps": 49,
+          "reached": true,
+          "final_dist": 0.18271172046661377
+        }
+      },
+      "episode_id": "rqfALeAoiTq_ep19",
+      "split": "test_heldout"
+    }
+  ]
+}
