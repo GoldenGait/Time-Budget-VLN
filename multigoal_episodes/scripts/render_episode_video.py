@@ -19,7 +19,7 @@ from habitat.utils.visualizations import maps
 from PIL import Image, ImageDraw
 
 FORWARD_M, TURN_DEG = 0.25, 15.0
-SUCCESS_DISTANCE, MAX_LEG_STEPS, FPS = 1.0, 500, 6
+SUCCESS_DISTANCE, MAX_LEG_STEPS, FPS = 0.2, 500, 6
 PANEL_H = 480
 MP3D = "/media/maitree-tiamat/Expansion/NaVILA_data/scene_datasets/mp3d"
 
