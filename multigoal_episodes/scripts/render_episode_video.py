@@ -19,7 +19,7 @@ from habitat.utils.visualizations import maps
 from PIL import Image, ImageDraw
 
 FORWARD_M, TURN_DEG = 0.25, 15.0
-SUCCESS_DISTANCE, MAX_LEG_STEPS, FPS = 1.0, 500, 6
+SUCCESS_DISTANCE, MAX_LEG_STEPS, FPS = 0.2, 500, 6
 PANEL_H = 480
 MP3D = "/media/maitree-tiamat/Expansion/NaVILA_data/scene_datasets/mp3d"
 
@@ -186,7 +186,9 @@ def main():
         frames.append(banner(frame, f"{title} | step {i}/{len(snaps)-1}"))
 
     out = args.out or f"multigoal_episodes/videos/ep{args.ep}_{args.mode}_{args.scene}.mp4"
-    imageio.mimsave(out, frames, fps=FPS, macro_block_size=1)
+    # macro_block_size=2 pads odd width/height up to even (libx264 + yuv420p
+    # needs even dims; some scenes' map panel makes the triptych width odd)
+    imageio.mimsave(out, frames, fps=FPS, macro_block_size=2)
     print(f"{len(frames)} frames -> {out}")
     sim.close()
 
