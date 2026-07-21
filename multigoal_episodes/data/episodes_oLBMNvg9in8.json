@@ -1,0 +1,2702 @@
+{
+  "scene": "oLBMNvg9in8",
+  "seed": 0,
+  "split": "train",
+  "action_unit": {
+    "forward_m": 0.25,
+    "turn_deg": 15.0,
+    "success_distance": 0.2
+  },
+  "episodes": [
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          -2.5497946739196777,
+          6.00999641418457,
+          2.8329973220825195
+        ],
+        "yaw": 0.8605556614246863
+      },
+      "G1": {
+        "id": 615,
+        "category": "toilet",
+        "center": [
+          -3.126460075378418,
+          6.953489303588867,
+          1.9477500915527344
+        ],
+        "navpoint": [
+          -2.709829092025757,
+          6.00999641418457,
+          1.9014577865600586
+        ]
+      },
+      "G2": {
+        "id": 628,
+        "category": "sink",
+        "center": [
+          -1.8800499439239502,
+          6.493569374084473,
+          1.8437910079956055
+        ],
+        "navpoint": [
+          -1.8800499439239502,
+          6.00999641418457,
+          2.1985363960266113
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 7,
+        "S_G2": 10
+      },
+      "nearest_only": 7,
+      "both_tour": 20,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "toilet",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 7,
+          "reached": true,
+          "final_dist": 0.20099687576293945
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "toilet",
+            "sink"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            7
+          ],
+          "steps": 20,
+          "reached": true,
+          "final_dist": 0.06771743297576904
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep0",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          -0.8049716949462891,
+          6.00999641418457,
+          3.4180662631988525
+        ],
+        "yaw": 0.6700123395200417
+      },
+      "G1": {
+        "id": 613,
+        "category": "chair",
+        "center": [
+          -1.9831299781799316,
+          6.3059000968933105,
+          5.151830196380615
+        ],
+        "navpoint": [
+          -2.421264886856079,
+          6.00999641418457,
+          4.948535919189453
+        ]
+      },
+      "G2": {
+        "id": 615,
+        "category": "toilet",
+        "center": [
+          -3.126460075378418,
+          6.953489303588867,
+          1.9477500915527344
+        ],
+        "navpoint": [
+          -2.709829092025757,
+          6.00999641418457,
+          1.9014577865600586
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 19,
+        "S_G2": 11
+      },
+      "nearest_only": 11,
+      "both_tour": 57,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "toilet",
+          "actions": [
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "steps": 11,
+          "reached": true,
+          "final_dist": 0.19274839758872986
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "toilet",
+            "chair"
+          ],
+          "actions": [
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            11
+          ],
+          "steps": 57,
+          "reached": true,
+          "final_dist": 0.14865291118621826
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep1",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          5.321959495544434,
+          6.00999641418457,
+          4.333989143371582
+        ],
+        "yaw": -2.0379158390962826
+      },
+      "G1": {
+        "id": 643,
+        "category": "table",
+        "center": [
+          2.755579948425293,
+          6.232439994812012,
+          2.429989814758301
+        ],
+        "navpoint": [
+          2.755579948425293,
+          5.809995651245117,
+          2.7485361099243164
+        ]
+      },
+      "G2": {
+        "id": 637,
+        "category": "bed",
+        "center": [
+          4.723139762878418,
+          6.741960048675537,
+          4.012129306793213
+        ],
+        "navpoint": [
+          5.028735637664795,
+          6.00999641418457,
+          4.012129306793213
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 33,
+        "S_G2": 12
+      },
+      "nearest_only": 12,
+      "both_tour": 43,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "bed",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 12,
+          "reached": true,
+          "final_dist": 0.18848693370819092
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "bed",
+            "table"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            12
+          ],
+          "steps": 43,
+          "reached": true,
+          "final_dist": 0.045605290681123734
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep2",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          3.7823309898376465,
+          6.00999641418457,
+          4.928646087646484
+        ],
+        "yaw": -2.7735988378314134
+      },
+      "G1": {
+        "id": 630,
+        "category": "chair",
+        "center": [
+          1.1862800121307373,
+          6.309878826141357,
+          4.169340133666992
+        ],
+        "navpoint": [
+          1.5472064018249512,
+          6.00999641418457,
+          4.133247375488281
+        ]
+      },
+      "G2": {
+        "id": 643,
+        "category": "table",
+        "center": [
+          2.755579948425293,
+          6.232439994812012,
+          2.429989814758301
+        ],
+        "navpoint": [
+          2.755579948425293,
+          5.809995651245117,
+          2.7485361099243164
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 19,
+        "S_G2": 24
+      },
+      "nearest_only": 19,
+      "both_tour": 35,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "chair",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 19,
+          "reached": true,
+          "final_dist": 0.14290113747119904
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "chair",
+            "table"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            19
+          ],
+          "steps": 35,
+          "reached": true,
+          "final_dist": 0.07324258238077164
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep3",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          -1.746899962425232,
+          6.00999641418457,
+          4.124703884124756
+        ],
+        "yaw": -1.2648295005505765
+      },
+      "G1": {
+        "id": 620,
+        "category": "table",
+        "center": [
+          -1.201990008354187,
+          6.305699348449707,
+          1.944380283355713
+        ],
+        "navpoint": [
+          -1.2558751106262207,
+          6.00999641418457,
+          2.375459909439087
+        ]
+      },
+      "G2": {
+        "id": 615,
+        "category": "toilet",
+        "center": [
+          -3.126460075378418,
+          6.953489303588867,
+          1.9477500915527344
+        ],
+        "navpoint": [
+          -2.709829092025757,
+          6.00999641418457,
+          1.9014577865600586
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 12,
+        "S_G2": 22
+      },
+      "nearest_only": 12,
+      "both_tour": 25,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "table",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 12,
+          "reached": true,
+          "final_dist": 0.11409148573875427
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "table",
+            "toilet"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            12
+          ],
+          "steps": 25,
+          "reached": true,
+          "final_dist": 0.07212816178798676
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep4",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          2.316805839538574,
+          6.00999641418457,
+          4.2345380783081055
+        ],
+        "yaw": 2.7778786000458915
+      },
+      "G1": {
+        "id": 629,
+        "category": "bed",
+        "center": [
+          3.976069927215576,
+          6.256349563598633,
+          3.21205997467041
+        ],
+        "navpoint": [
+          3.028735637664795,
+          6.00999641418457,
+          3.348536491394043
+        ]
+      },
+      "G2": {
+        "id": 642,
+        "category": "chair",
+        "center": [
+          5.228059768676758,
+          6.425980567932129,
+          2.3815197944641113
+        ],
+        "navpoint": [
+          5.228059768676758,
+          6.00999641418457,
+          2.7985363006591797
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 16,
+        "S_G2": 31
+      },
+      "nearest_only": 16,
+      "both_tour": 56,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "bed",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "steps": 16,
+          "reached": true,
+          "final_dist": 0.14375090599060059
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "bed",
+            "chair"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            16
+          ],
+          "steps": 56,
+          "reached": true,
+          "final_dist": 0.21495510637760162
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep5",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          -0.01337924599647522,
+          6.00999641418457,
+          -4.433055877685547
+        ],
+        "yaw": -0.2510437936434946
+      },
+      "G1": {
+        "id": 692,
+        "category": "cabinet",
+        "center": [
+          0.44132000207901,
+          6.8663201332092285,
+          -2.89617919921875
+        ],
+        "navpoint": [
+          0.17873525619506836,
+          5.852109909057617,
+          -2.89617919921875
+        ]
+      },
+      "G2": {
+        "id": 705,
+        "category": "table",
+        "center": [
+          -0.8432190418243408,
+          6.093839645385742,
+          -4.334239959716797
+        ],
+        "navpoint": [
+          -0.815946638584137,
+          6.00999641418457,
+          -3.925151824951172
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 19,
+        "S_G2": 18
+      },
+      "nearest_only": 18,
+      "both_tour": 31,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "table",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 18,
+          "reached": true,
+          "final_dist": 0.0573861300945282
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "table",
+            "cabinet"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            18
+          ],
+          "steps": 31,
+          "reached": true,
+          "final_dist": 0.13637807965278625
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep6",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          -1.0829235315322876,
+          6.00999641418457,
+          4.139308929443359
+        ],
+        "yaw": 2.0255344966378663
+      },
+      "G1": {
+        "id": 628,
+        "category": "sink",
+        "center": [
+          -1.8800499439239502,
+          6.493569374084473,
+          1.8437910079956055
+        ],
+        "navpoint": [
+          -1.8800499439239502,
+          6.00999641418457,
+          2.1985363960266113
+        ]
+      },
+      "G2": {
+        "id": 613,
+        "category": "chair",
+        "center": [
+          -1.9831299781799316,
+          6.3059000968933105,
+          5.151830196380615
+        ],
+        "navpoint": [
+          -2.421264886856079,
+          6.00999641418457,
+          4.948535919189453
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 18,
+        "S_G2": 11
+      },
+      "nearest_only": 11,
+      "both_tour": 40,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "chair",
+          "actions": [
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 11,
+          "reached": true,
+          "final_dist": 0.21741221845149994
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "chair",
+            "sink"
+          ],
+          "actions": [
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            11
+          ],
+          "steps": 40,
+          "reached": true,
+          "final_dist": 0.04304078221321106
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep7",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          -1.7999918460845947,
+          6.00999641418457,
+          2.226757287979126
+        ],
+        "yaw": 1.8967716167257427
+      },
+      "G1": {
+        "id": 613,
+        "category": "chair",
+        "center": [
+          -1.9831299781799316,
+          6.3059000968933105,
+          5.151830196380615
+        ],
+        "navpoint": [
+          -2.421264886856079,
+          6.00999641418457,
+          4.948535919189453
+        ]
+      },
+      "G2": {
+        "id": 615,
+        "category": "toilet",
+        "center": [
+          -3.126460075378418,
+          6.953489303588867,
+          1.9477500915527344
+        ],
+        "navpoint": [
+          -2.709829092025757,
+          6.00999641418457,
+          1.9014577865600586
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 26,
+        "S_G2": 6
+      },
+      "nearest_only": 6,
+      "both_tour": 40,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "toilet",
+          "actions": [
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 6,
+          "reached": true,
+          "final_dist": 0.23367099463939667
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "toilet",
+            "chair"
+          ],
+          "actions": [
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            6
+          ],
+          "steps": 40,
+          "reached": true,
+          "final_dist": 0.2023487091064453
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep8",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          4.9344987869262695,
+          6.00999641418457,
+          4.754672050476074
+        ],
+        "yaw": 2.9283544182160153
+      },
+      "G1": {
+        "id": 629,
+        "category": "bed",
+        "center": [
+          3.976069927215576,
+          6.256349563598633,
+          3.21205997467041
+        ],
+        "navpoint": [
+          3.028735637664795,
+          6.00999641418457,
+          3.348536491394043
+        ]
+      },
+      "G2": {
+        "id": 630,
+        "category": "chair",
+        "center": [
+          1.1862800121307373,
+          6.309878826141357,
+          4.169340133666992
+        ],
+        "navpoint": [
+          1.5472064018249512,
+          6.00999641418457,
+          4.133247375488281
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 24,
+        "S_G2": 21
+      },
+      "nearest_only": 21,
+      "both_tour": 37,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "chair",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 21,
+          "reached": true,
+          "final_dist": 0.20742185413837433
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "chair",
+            "bed"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            21
+          ],
+          "steps": 37,
+          "reached": true,
+          "final_dist": 0.02946407161653042
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep9",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          0.19741949439048767,
+          6.00999641418457,
+          2.8281655311584473
+        ],
+        "yaw": -2.3589923559454644
+      },
+      "G1": {
+        "id": 615,
+        "category": "toilet",
+        "center": [
+          -3.126460075378418,
+          6.953489303588867,
+          1.9477500915527344
+        ],
+        "navpoint": [
+          -2.709829092025757,
+          6.00999641418457,
+          1.9014577865600586
+        ]
+      },
+      "G2": {
+        "id": 613,
+        "category": "chair",
+        "center": [
+          -1.9831299781799316,
+          6.3059000968933105,
+          5.151830196380615
+        ],
+        "navpoint": [
+          -2.421264886856079,
+          6.00999641418457,
+          4.948535919189453
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 27,
+        "S_G2": 24
+      },
+      "nearest_only": 24,
+      "both_tour": 64,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "chair",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 24,
+          "reached": true,
+          "final_dist": 0.2088407725095749
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "chair",
+            "toilet"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            24
+          ],
+          "steps": 64,
+          "reached": true,
+          "final_dist": 0.21250659227371216
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep10",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          2.4456863403320312,
+          6.00999641418457,
+          5.1533355712890625
+        ],
+        "yaw": -0.8205562854112163
+      },
+      "G1": {
+        "id": 642,
+        "category": "chair",
+        "center": [
+          5.228059768676758,
+          6.425980567932129,
+          2.3815197944641113
+        ],
+        "navpoint": [
+          5.228059768676758,
+          6.00999641418457,
+          2.7985363006591797
+        ]
+      },
+      "G2": {
+        "id": 629,
+        "category": "bed",
+        "center": [
+          3.976069927215576,
+          6.256349563598633,
+          3.21205997467041
+        ],
+        "navpoint": [
+          3.028735637664795,
+          6.00999641418457,
+          3.348536491394043
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 25,
+        "S_G2": 9
+      },
+      "nearest_only": 9,
+      "both_tour": 54,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "bed",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 9,
+          "reached": true,
+          "final_dist": 0.1493391990661621
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "bed",
+            "chair"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            9
+          ],
+          "steps": 54,
+          "reached": true,
+          "final_dist": 0.19227749109268188
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep11",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          3.0961315631866455,
+          6.00999641418457,
+          5.108658313751221
+        ],
+        "yaw": 2.5758481244631435
+      },
+      "G1": {
+        "id": 643,
+        "category": "table",
+        "center": [
+          2.755579948425293,
+          6.232439994812012,
+          2.429989814758301
+        ],
+        "navpoint": [
+          2.755579948425293,
+          5.809995651245117,
+          2.7485361099243164
+        ]
+      },
+      "G2": {
+        "id": 642,
+        "category": "chair",
+        "center": [
+          5.228059768676758,
+          6.425980567932129,
+          2.3815197944641113
+        ],
+        "navpoint": [
+          5.228059768676758,
+          6.00999641418457,
+          2.7985363006591797
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 19,
+        "S_G2": 32
+      },
+      "nearest_only": 19,
+      "both_tour": 66,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "table",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 19,
+          "reached": true,
+          "final_dist": 0.15387839078903198
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "table",
+            "chair"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            19
+          ],
+          "steps": 66,
+          "reached": true,
+          "final_dist": 0.09982198476791382
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep12",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          -2.3550243377685547,
+          6.00999641418457,
+          -3.4288439750671387
+        ],
+        "yaw": -2.3447772999628302
+      },
+      "G1": {
+        "id": 702,
+        "category": "chest_of_drawers",
+        "center": [
+          -3.082750082015991,
+          6.217609405517578,
+          -1.4438295364379883
+        ],
+        "navpoint": [
+          -3.082750082015991,
+          6.00999641418457,
+          -2.9514639377593994
+        ]
+      },
+      "G2": {
+        "id": 688,
+        "category": "bed",
+        "center": [
+          -1.827620029449463,
+          6.493180274963379,
+          -1.9820098876953125
+        ],
+        "navpoint": [
+          -0.7712650299072266,
+          5.809995651245117,
+          -1.9820098876953125
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 10,
+        "S_G2": 22
+      },
+      "nearest_only": 10,
+      "both_tour": 44,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "chest_of_drawers",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 10,
+          "reached": true,
+          "final_dist": 0.12583336234092712
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "chest_of_drawers",
+            "bed"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            10
+          ],
+          "steps": 44,
+          "reached": true,
+          "final_dist": 0.02513483166694641
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep13",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          -2.381237030029297,
+          6.00999641418457,
+          4.385750770568848
+        ],
+        "yaw": 2.3882269310642954
+      },
+      "G1": {
+        "id": 615,
+        "category": "toilet",
+        "center": [
+          -3.126460075378418,
+          6.953489303588867,
+          1.9477500915527344
+        ],
+        "navpoint": [
+          -2.709829092025757,
+          6.00999641418457,
+          1.9014577865600586
+        ]
+      },
+      "G2": {
+        "id": 613,
+        "category": "chair",
+        "center": [
+          -1.9831299781799316,
+          6.3059000968933105,
+          5.151830196380615
+        ],
+        "navpoint": [
+          -2.421264886856079,
+          6.00999641418457,
+          4.948535919189453
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 34,
+        "S_G2": 5
+      },
+      "nearest_only": 5,
+      "both_tour": 49,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "chair",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 5,
+          "reached": true,
+          "final_dist": 0.07005181163549423
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "chair",
+            "toilet"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            5
+          ],
+          "steps": 49,
+          "reached": true,
+          "final_dist": 0.24675144255161285
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep14",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          -2.138646364212036,
+          6.00999641418457,
+          2.2308802604675293
+        ],
+        "yaw": 1.5597913484749046
+      },
+      "G1": {
+        "id": 624,
+        "category": "table",
+        "center": [
+          -2.922950029373169,
+          6.323628902435303,
+          5.334699630737305
+        ],
+        "navpoint": [
+          -2.5712649822235107,
+          6.00999641418457,
+          4.948535919189453
+        ]
+      },
+      "G2": {
+        "id": 615,
+        "category": "toilet",
+        "center": [
+          -3.126460075378418,
+          6.953489303588867,
+          1.9477500915527344
+        ],
+        "navpoint": [
+          -2.709829092025757,
+          6.00999641418457,
+          1.9014577865600586
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 33,
+        "S_G2": 4
+      },
+      "nearest_only": 4,
+      "both_tour": 43,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "toilet",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 4,
+          "reached": true,
+          "final_dist": 0.15950584411621094
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "toilet",
+            "table"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            4
+          ],
+          "steps": 43,
+          "reached": true,
+          "final_dist": 0.10319247096776962
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep15",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          4.464263439178467,
+          6.00999641418457,
+          4.4549880027771
+        ],
+        "yaw": 2.577713002474418
+      },
+      "G1": {
+        "id": 644,
+        "category": "bed",
+        "center": [
+          3.412719964981079,
+          6.719379425048828,
+          4.085460662841797
+        ],
+        "navpoint": [
+          3.498861312866211,
+          6.00999641418457,
+          4.365420341491699
+        ]
+      },
+      "G2": {
+        "id": 642,
+        "category": "chair",
+        "center": [
+          5.228059768676758,
+          6.425980567932129,
+          2.3815197944641113
+        ],
+        "navpoint": [
+          5.228059768676758,
+          6.00999641418457,
+          2.7985363006591797
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 7,
+        "S_G2": 23
+      },
+      "nearest_only": 7,
+      "both_tour": 37,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "bed",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 7,
+          "reached": true,
+          "final_dist": 0.22401918470859528
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "bed",
+            "chair"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            7
+          ],
+          "steps": 37,
+          "reached": true,
+          "final_dist": 0.1013055071234703
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep16",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          2.351651906967163,
+          5.89314603805542,
+          3.560006618499756
+        ],
+        "yaw": 3.028135248356281
+      },
+      "G1": {
+        "id": 630,
+        "category": "chair",
+        "center": [
+          1.1862800121307373,
+          6.309878826141357,
+          4.169340133666992
+        ],
+        "navpoint": [
+          1.5472064018249512,
+          6.00999641418457,
+          4.133247375488281
+        ]
+      },
+      "G2": {
+        "id": 637,
+        "category": "bed",
+        "center": [
+          4.723139762878418,
+          6.741960048675537,
+          4.012129306793213
+        ],
+        "navpoint": [
+          5.028735637664795,
+          6.00999641418457,
+          4.012129306793213
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 6,
+        "S_G2": 25
+      },
+      "nearest_only": 6,
+      "both_tour": 37,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "chair",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 6,
+          "reached": true,
+          "final_dist": 0.2440674602985382
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "chair",
+            "bed"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            6
+          ],
+          "steps": 37,
+          "reached": true,
+          "final_dist": 0.17894381284713745
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep17",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          5.3675384521484375,
+          6.00999641418457,
+          4.354833126068115
+        ],
+        "yaw": 3.0050321061281604
+      },
+      "G1": {
+        "id": 642,
+        "category": "chair",
+        "center": [
+          5.228059768676758,
+          6.425980567932129,
+          2.3815197944641113
+        ],
+        "navpoint": [
+          5.228059768676758,
+          6.00999641418457,
+          2.7985363006591797
+        ]
+      },
+      "G2": {
+        "id": 643,
+        "category": "table",
+        "center": [
+          2.755579948425293,
+          6.232439994812012,
+          2.429989814758301
+        ],
+        "navpoint": [
+          2.755579948425293,
+          5.809995651245117,
+          2.7485361099243164
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 18,
+        "S_G2": 28
+      },
+      "nearest_only": 18,
+      "both_tour": 64,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "chair",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 18,
+          "reached": true,
+          "final_dist": 0.08751864731311798
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "chair",
+            "table"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            18
+          ],
+          "steps": 64,
+          "reached": true,
+          "final_dist": 0.1209535300731659
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep18",
+      "split": "train"
+    },
+    {
+      "scene": "oLBMNvg9in8",
+      "start_pose": {
+        "position": [
+          -0.628108561038971,
+          6.00999641418457,
+          5.109052658081055
+        ],
+        "yaw": 0.48812742481396
+      },
+      "G1": {
+        "id": 613,
+        "category": "chair",
+        "center": [
+          -1.9831299781799316,
+          6.3059000968933105,
+          5.151830196380615
+        ],
+        "navpoint": [
+          -2.421264886856079,
+          6.00999641418457,
+          4.948535919189453
+        ]
+      },
+      "G2": {
+        "id": 615,
+        "category": "toilet",
+        "center": [
+          -3.126460075378418,
+          6.953489303588867,
+          1.9477500915527344
+        ],
+        "navpoint": [
+          -2.709829092025757,
+          6.00999641418457,
+          1.9014577865600586
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 18,
+        "S_G2": 18
+      },
+      "nearest_only": 18,
+      "both_tour": 55,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "chair",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 18,
+          "reached": true,
+          "final_dist": 0.1969086229801178
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "chair",
+            "toilet"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            18
+          ],
+          "steps": 55,
+          "reached": true,
+          "final_dist": 0.21486566960811615
+        }
+      },
+      "episode_id": "oLBMNvg9in8_ep19",
+      "split": "train"
+    }
+  ]
+}

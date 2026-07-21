@@ -1,0 +1,3608 @@
+{
+  "scene": "pLe4wQe7qrG",
+  "seed": 0,
+  "split": "train",
+  "action_unit": {
+    "forward_m": 0.25,
+    "turn_deg": 15.0,
+    "success_distance": 0.2
+  },
+  "episodes": [
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          -1.4178622961044312,
+          0.07521799951791763,
+          -1.869690179824829
+        ],
+        "yaw": 0.8605556614246863
+      },
+      "G1": {
+        "id": 29,
+        "category": "table",
+        "center": [
+          4.697669982910156,
+          0.8013380765914917,
+          -1.4621800184249878
+        ],
+        "navpoint": [
+          4.195918083190918,
+          0.4752180278301239,
+          -1.2570281028747559
+        ]
+      },
+      "G2": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 50,
+        "S_G2": 40
+      },
+      "nearest_only": 40,
+      "both_tour": 93,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "shower",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 40,
+          "reached": true,
+          "final_dist": 0.13496996462345123
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "table",
+            "shower"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            50
+          ],
+          "steps": 93,
+          "reached": true,
+          "final_dist": 0.15546968579292297
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep0",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          2.629188060760498,
+          0.07521799951791763,
+          0.35543015599250793
+        ],
+        "yaw": -3.03774645687452
+      },
+      "G1": {
+        "id": 33,
+        "category": "table",
+        "center": [
+          4.247960090637207,
+          0.6999120116233826,
+          -0.0343586802482605
+        ],
+        "navpoint": [
+          4.485806465148926,
+          0.07521799951791763,
+          -0.058143436908721924
+        ]
+      },
+      "G2": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 23,
+        "S_G2": 37
+      },
+      "nearest_only": 23,
+      "both_tour": 75,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "table",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward"
+          ],
+          "steps": 23,
+          "reached": true,
+          "final_dist": 0.21384188532829285
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "table",
+            "shower"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            23
+          ],
+          "steps": 75,
+          "reached": true,
+          "final_dist": 0.05838128924369812
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep1",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          -1.779966950416565,
+          0.07521799951791763,
+          2.854625701904297
+        ],
+        "yaw": 2.5934197786078093
+      },
+      "G1": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "G2": {
+        "id": 33,
+        "category": "table",
+        "center": [
+          4.247960090637207,
+          0.6999120116233826,
+          -0.0343586802482605
+        ],
+        "navpoint": [
+          4.485806465148926,
+          0.07521799951791763,
+          -0.058143436908721924
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 12,
+        "S_G2": 53
+      },
+      "nearest_only": 12,
+      "both_tour": 53,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "shower",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 12,
+          "reached": true,
+          "final_dist": 0.0830824226140976
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "shower",
+            "table"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            12
+          ],
+          "steps": 53,
+          "reached": true,
+          "final_dist": 0.1721598207950592
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep2",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          -1.2624226808547974,
+          0.07521799951791763,
+          -2.2228128910064697
+        ],
+        "yaw": 0.27410390540137985
+      },
+      "G1": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "G2": {
+        "id": 33,
+        "category": "table",
+        "center": [
+          4.247960090637207,
+          0.6999120116233826,
+          -0.0343586802482605
+        ],
+        "navpoint": [
+          4.485806465148926,
+          0.07521799951791763,
+          -0.058143436908721924
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 41,
+        "S_G2": 46
+      },
+      "nearest_only": 41,
+      "both_tour": 91,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "shower",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 41,
+          "reached": true,
+          "final_dist": 0.02990748919546604
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "shower",
+            "table"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            41
+          ],
+          "steps": 91,
+          "reached": true,
+          "final_dist": 0.09205959737300873
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep3",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          2.57126522064209,
+          0.07521799951791763,
+          0.028127938508987427
+        ],
+        "yaw": 1.9845664104768632
+      },
+      "G1": {
+        "id": 29,
+        "category": "table",
+        "center": [
+          4.697669982910156,
+          0.8013380765914917,
+          -1.4621800184249878
+        ],
+        "navpoint": [
+          4.195918083190918,
+          0.4752180278301239,
+          -1.2570281028747559
+        ]
+      },
+      "G2": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 31,
+        "S_G2": 24
+      },
+      "nearest_only": 24,
+      "both_tour": 71,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "shower",
+          "actions": [
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 24,
+          "reached": true,
+          "final_dist": 0.21695348620414734
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "table",
+            "shower"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            31
+          ],
+          "steps": 71,
+          "reached": true,
+          "final_dist": 0.14288635551929474
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep4",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          -0.2887446880340576,
+          0.10725867003202438,
+          -0.6400060653686523
+        ],
+        "yaw": -2.930568260297326
+      },
+      "G1": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "G2": {
+        "id": 31,
+        "category": "table",
+        "center": [
+          4.581319808959961,
+          0.806751012802124,
+          1.3940398693084717
+        ],
+        "navpoint": [
+          4.581319808959961,
+          0.07521799951791763,
+          1.8429720401763916
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 20,
+        "S_G2": 43
+      },
+      "nearest_only": 20,
+      "both_tour": 80,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "shower",
+          "actions": [
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 20,
+          "reached": true,
+          "final_dist": 0.06132745370268822
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "shower",
+            "table"
+          ],
+          "actions": [
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            20
+          ],
+          "steps": 80,
+          "reached": true,
+          "final_dist": 0.1144568994641304
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep5",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          4.71663761138916,
+          0.07521799951791763,
+          -0.3639453649520874
+        ],
+        "yaw": -2.0379158390962826
+      },
+      "G1": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "G2": {
+        "id": 16,
+        "category": "table",
+        "center": [
+          -0.889240026473999,
+          0.5266839265823364,
+          -0.0591963529586792
+        ],
+        "navpoint": [
+          -0.42915472388267517,
+          0.07521799951791763,
+          -0.08341136574745178
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 55,
+        "S_G2": 36
+      },
+      "nearest_only": 36,
+      "both_tour": 54,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "table",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 36,
+          "reached": true,
+          "final_dist": 0.21825401484966278
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "table",
+            "shower"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            36
+          ],
+          "steps": 54,
+          "reached": true,
+          "final_dist": 0.0742531344294548
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep6",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          5.858046054840088,
+          0.07521799951791763,
+          2.104414224624634
+        ],
+        "yaw": -1.2584473065782806
+      },
+      "G1": {
+        "id": 29,
+        "category": "table",
+        "center": [
+          4.697669982910156,
+          0.8013380765914917,
+          -1.4621800184249878
+        ],
+        "navpoint": [
+          4.195918083190918,
+          0.4752180278301239,
+          -1.2570281028747559
+        ]
+      },
+      "G2": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 40,
+        "S_G2": 72
+      },
+      "nearest_only": 40,
+      "both_tour": 88,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "table",
+          "actions": [
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward"
+          ],
+          "steps": 40,
+          "reached": true,
+          "final_dist": 0.12938979268074036
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "table",
+            "shower"
+          ],
+          "actions": [
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            40
+          ],
+          "steps": 88,
+          "reached": true,
+          "final_dist": 0.13296471536159515
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep7",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          -0.3160141110420227,
+          0.1525942087173462,
+          -1.6356836557388306
+        ],
+        "yaw": -2.9636549119444626
+      },
+      "G1": {
+        "id": 16,
+        "category": "table",
+        "center": [
+          -0.889240026473999,
+          0.5266839265823364,
+          -0.0591963529586792
+        ],
+        "navpoint": [
+          -0.42915472388267517,
+          0.07521799951791763,
+          -0.08341136574745178
+        ]
+      },
+      "G2": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 8,
+        "S_G2": 27
+      },
+      "nearest_only": 8,
+      "both_tour": 27,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "table",
+          "actions": [
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 8,
+          "reached": true,
+          "final_dist": 0.08031018823385239
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "table",
+            "shower"
+          ],
+          "actions": [
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            8
+          ],
+          "steps": 27,
+          "reached": true,
+          "final_dist": 0.08581037074327469
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep8",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          -0.06521730870008469,
+          0.07521799951791763,
+          1.9841643571853638
+        ],
+        "yaw": 0.9248189764942678
+      },
+      "G1": {
+        "id": 31,
+        "category": "table",
+        "center": [
+          4.581319808959961,
+          0.806751012802124,
+          1.3940398693084717
+        ],
+        "navpoint": [
+          4.581319808959961,
+          0.07521799951791763,
+          1.8429720401763916
+        ]
+      },
+      "G2": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 50,
+        "S_G2": 10
+      },
+      "nearest_only": 10,
+      "both_tour": 74,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "shower",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 10,
+          "reached": true,
+          "final_dist": 0.1207389384508133
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "shower",
+            "table"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            10
+          ],
+          "steps": 74,
+          "reached": true,
+          "final_dist": 0.11350587755441666
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep9",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          3.0986318588256836,
+          0.07521799951791763,
+          0.22366100549697876
+        ],
+        "yaw": -0.7308754819569288
+      },
+      "G1": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "G2": {
+        "id": 33,
+        "category": "table",
+        "center": [
+          4.247960090637207,
+          0.6999120116233826,
+          -0.0343586802482605
+        ],
+        "navpoint": [
+          4.485806465148926,
+          0.07521799951791763,
+          -0.058143436908721924
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 38,
+        "S_G2": 17
+      },
+      "nearest_only": 17,
+      "both_tour": 61,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "table",
+          "actions": [
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward"
+          ],
+          "steps": 17,
+          "reached": true,
+          "final_dist": 0.03259865194559097
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "table",
+            "shower"
+          ],
+          "actions": [
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            17
+          ],
+          "steps": 61,
+          "reached": true,
+          "final_dist": 0.007618932519108057
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep10",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          5.799402236938477,
+          0.07521799951791763,
+          -2.1117281913757324
+        ],
+        "yaw": 1.1657946707540434
+      },
+      "G1": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "G2": {
+        "id": 31,
+        "category": "table",
+        "center": [
+          4.581319808959961,
+          0.806751012802124,
+          1.3940398693084717
+        ],
+        "navpoint": [
+          4.581319808959961,
+          0.07521799951791763,
+          1.8429720401763916
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 53,
+        "S_G2": 52
+      },
+      "nearest_only": 52,
+      "both_tour": 102,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "table",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 52,
+          "reached": true,
+          "final_dist": 0.13056237995624542
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "table",
+            "shower"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            52
+          ],
+          "steps": 102,
+          "reached": true,
+          "final_dist": 0.08958227187395096
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep11",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          6.8574628829956055,
+          0.07521799951791763,
+          -0.6748773455619812
+        ],
+        "yaw": 1.1840457287093606
+      },
+      "G1": {
+        "id": 33,
+        "category": "table",
+        "center": [
+          4.247960090637207,
+          0.6999120116233826,
+          -0.0343586802482605
+        ],
+        "navpoint": [
+          4.485806465148926,
+          0.07521799951791763,
+          -0.058143436908721924
+        ]
+      },
+      "G2": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 13,
+        "S_G2": 48
+      },
+      "nearest_only": 13,
+      "both_tour": 56,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "table",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "steps": 13,
+          "reached": true,
+          "final_dist": 0.21956530213356018
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "table",
+            "shower"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            13
+          ],
+          "steps": 56,
+          "reached": true,
+          "final_dist": 0.0499531552195549
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep12",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          6.331249713897705,
+          0.07521799951791763,
+          -0.07812237739562988
+        ],
+        "yaw": 1.391652284819048
+      },
+      "G1": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "G2": {
+        "id": 31,
+        "category": "table",
+        "center": [
+          4.581319808959961,
+          0.806751012802124,
+          1.3940398693084717
+        ],
+        "navpoint": [
+          4.581319808959961,
+          0.07521799951791763,
+          1.8429720401763916
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 48,
+        "S_G2": 28
+      },
+      "nearest_only": 28,
+      "both_tour": 81,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "table",
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 28,
+          "reached": true,
+          "final_dist": 0.11387921124696732
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "table",
+            "shower"
+          ],
+          "actions": [
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            28
+          ],
+          "steps": 81,
+          "reached": true,
+          "final_dist": 0.07934551686048508
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep13",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          -1.1809624433517456,
+          0.07521799951791763,
+          -1.8943915367126465
+        ],
+        "yaw": -1.1922854594059253
+      },
+      "G1": {
+        "id": 31,
+        "category": "table",
+        "center": [
+          4.581319808959961,
+          0.806751012802124,
+          1.3940398693084717
+        ],
+        "navpoint": [
+          4.581319808959961,
+          0.07521799951791763,
+          1.8429720401763916
+        ]
+      },
+      "G2": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 51,
+        "S_G2": 35
+      },
+      "nearest_only": 35,
+      "both_tour": 95,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "shower",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "steps": 35,
+          "reached": true,
+          "final_dist": 0.038053564727306366
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "shower",
+            "table"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            35
+          ],
+          "steps": 95,
+          "reached": true,
+          "final_dist": 0.186635360121727
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep14",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          1.4764072895050049,
+          0.12024147808551788,
+          -0.5398240685462952
+        ],
+        "yaw": 2.7271758421328762
+      },
+      "G1": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "G2": {
+        "id": 29,
+        "category": "table",
+        "center": [
+          4.697669982910156,
+          0.8013380765914917,
+          -1.4621800184249878
+        ],
+        "navpoint": [
+          4.195918083190918,
+          0.4752180278301239,
+          -1.2570281028747559
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 21,
+        "S_G2": 26
+      },
+      "nearest_only": 21,
+      "both_tour": 69,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "shower",
+          "actions": [
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "steps": 21,
+          "reached": true,
+          "final_dist": 0.1576433777809143
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "shower",
+            "table"
+          ],
+          "actions": [
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            21
+          ],
+          "steps": 69,
+          "reached": true,
+          "final_dist": 0.23034749925136566
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep15",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          5.3908538818359375,
+          0.07521799951791763,
+          0.37652140855789185
+        ],
+        "yaw": 0.4494351814662769
+      },
+      "G1": {
+        "id": 31,
+        "category": "table",
+        "center": [
+          4.581319808959961,
+          0.806751012802124,
+          1.3940398693084717
+        ],
+        "navpoint": [
+          4.581319808959961,
+          0.07521799951791763,
+          1.8429720401763916
+        ]
+      },
+      "G2": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 38,
+        "S_G2": 39
+      },
+      "nearest_only": 38,
+      "both_tour": 87,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "table",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 38,
+          "reached": true,
+          "final_dist": 0.1556197702884674
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "table",
+            "shower"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            38
+          ],
+          "steps": 87,
+          "reached": true,
+          "final_dist": 0.10109546780586243
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep16",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          0.2642838656902313,
+          0.07521799951791763,
+          1.0936040878295898
+        ],
+        "yaw": -1.0184338063523257
+      },
+      "G1": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "G2": {
+        "id": 29,
+        "category": "table",
+        "center": [
+          4.697669982910156,
+          0.8013380765914917,
+          -1.4621800184249878
+        ],
+        "navpoint": [
+          4.195918083190918,
+          0.4752180278301239,
+          -1.2570281028747559
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 22,
+        "S_G2": 36
+      },
+      "nearest_only": 22,
+      "both_tour": 80,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "shower",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 22,
+          "reached": true,
+          "final_dist": 0.14117783308029175
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "shower",
+            "table"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            22
+          ],
+          "steps": 80,
+          "reached": true,
+          "final_dist": 0.07023103535175323
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep17",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          8.893129348754883,
+          0.07521799951791763,
+          0.5152946710586548
+        ],
+        "yaw": 2.452166074285545
+      },
+      "G1": {
+        "id": 31,
+        "category": "table",
+        "center": [
+          4.581319808959961,
+          0.806751012802124,
+          1.3940398693084717
+        ],
+        "navpoint": [
+          4.581319808959961,
+          0.07521799951791763,
+          1.8429720401763916
+        ]
+      },
+      "G2": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 33,
+        "S_G2": 60
+      },
+      "nearest_only": 33,
+      "both_tour": 86,
+      "ordering_for_both": "G1,G2",
+      "traces": {
+        "tight": {
+          "target_slot": "G1",
+          "target_category": "table",
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "steps": 33,
+          "reached": true,
+          "final_dist": 0.047832783311605453
+        },
+        "loose": {
+          "order_slots": [
+            "G1",
+            "G2"
+          ],
+          "order_categories": [
+            "table",
+            "shower"
+          ],
+          "actions": [
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            33
+          ],
+          "steps": 86,
+          "reached": true,
+          "final_dist": 0.03791311755776405
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep18",
+      "split": "train"
+    },
+    {
+      "scene": "pLe4wQe7qrG",
+      "start_pose": {
+        "position": [
+          -0.8615446090698242,
+          0.07521799951791763,
+          -2.314700126647949
+        ],
+        "yaw": -2.613708681215308
+      },
+      "G1": {
+        "id": 33,
+        "category": "table",
+        "center": [
+          4.247960090637207,
+          0.6999120116233826,
+          -0.0343586802482605
+        ],
+        "navpoint": [
+          4.485806465148926,
+          0.07521799951791763,
+          -0.058143436908721924
+        ]
+      },
+      "G2": {
+        "id": 2,
+        "category": "shower",
+        "center": [
+          -1.5605000257492065,
+          0.1625680923461914,
+          2.608570098876953
+        ],
+        "navpoint": [
+          -1.5605000257492065,
+          0.07521799951791763,
+          2.608570098876953
+        ]
+      },
+      "segment_costs": {
+        "S_G1": 38,
+        "S_G2": 33
+      },
+      "nearest_only": 33,
+      "both_tour": 87,
+      "ordering_for_both": "G2,G1",
+      "traces": {
+        "tight": {
+          "target_slot": "G2",
+          "target_category": "shower",
+          "actions": [
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward"
+          ],
+          "steps": 33,
+          "reached": true,
+          "final_dist": 0.2465895265340805
+        },
+        "loose": {
+          "order_slots": [
+            "G2",
+            "G1"
+          ],
+          "order_categories": [
+            "shower",
+            "table"
+          ],
+          "actions": [
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_left",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "move_forward",
+            "move_forward",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "move_forward",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "turn_right",
+            "move_forward"
+          ],
+          "leg_breaks": [
+            33
+          ],
+          "steps": 87,
+          "reached": true,
+          "final_dist": 0.1889847218990326
+        }
+      },
+      "episode_id": "pLe4wQe7qrG_ep19",
+      "split": "train"
+    }
+  ]
+}
