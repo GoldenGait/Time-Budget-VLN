@@ -1,12 +1,19 @@
 """Layer 2 — flatten budget-conditioned episodes into NaVILA SFT annotations.
 
 Reads a Layer-1 episodes_<scene>.json (with stored expert primitive traces) and,
-for each episode x regime (tight / loose), replays the trace to:
+for each episode x regime, replays the trace to:
   1. dump one 512x512 RGB frame per native-action decision point,
   2. aggregate 0.25m/15deg primitives into NaVILA's native vocabulary
      (move forward 25/50/75 cm, turn left/right 15/30/45 degrees, stop),
-  3. write the budget-conditioned instruction with the LIVE remaining budget,
+  3. write the NaVILA-style instruction with the LIVE remaining budget re-stated
+     at EVERY decision step ("You have N steps of budget left."),
   4. emit one {video_id, q, a, frames} record per action (+ a final stop).
+
+Regimes:
+  tight / loose  -- two-goal shortest-distance ("Find the X and the Y.")
+  covtour        -- single-target coverage-tour object search ("Find the X.").
+                    Uses a stored traces.covtour if present, else computes it on
+                    the fly via coverage_tour_demo (so it ends facing the goal).
 
 Output mirrors the NaVILA-Dataset layout so datasets_mixture.py can point at it:
   <out>/annotations.json          (data_path)
@@ -17,14 +24,19 @@ Usage:
   python build_sft_dataset.py GdvgFV5R1Z5                  # all episodes
 """
 import argparse
+import functools
 import json
 import math
 import os
+import sys
 
 import numpy as np
 import habitat_sim
 from habitat_sim.utils.common import quat_from_angle_axis
 from PIL import Image
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import coverage_tour_demo as ct   # covtour trace generator (Grid, compute_viewpoints, run)
 
 FORWARD_M, TURN_DEG = 0.25, 15.0
 FRAME_RES = 512                       # match released R2R frames (512x512 RGB)
@@ -103,27 +115,57 @@ def sample_budgets(nearest_only, both_tour, tight_frac, loose_margin):
     return int(tight), int(loose)
 
 
-def instruction(c1, c2, remaining, first):
+def instruction_multigoal(c1, c2, remaining, first):
+    """Two-goal shortest-distance regimes (tight / loose)."""
     goals = f"the {c1} and the {c2}"
     if first:
         return f"Find {goals}. You have a budget of {remaining} steps."
     return f"Find {goals}. You have {remaining} steps of budget left."
 
 
-# ---------------------------------------------------------------- flatten one
-def flatten_regime(sim, ep, regime, budget, frames_root, c1, c2, write_frames=True):
-    """Replay one regime's stored trace; dump frames; return list of records."""
-    trace = ep["traces"][regime]
-    prims = trace["actions"]
+def instruction_search(cat, remaining, first):
+    """Single-target object-search regime (covtour)."""
+    if first:
+        return f"Find the {cat}. You have a budget of {remaining} steps."
+    return f"Find the {cat}. You have {remaining} steps of budget left."
+
+
+# ---------------------------------------------------------------- covtour trace
+def covtour_trace(sim, ep, mp3d):
+    """Primitive actions for the coverage-tour object search.
+
+    Prefers a stored traces.covtour (Layer-1 persisted); otherwise computes it on
+    the fly with coverage_tour_demo (reusing this sim's pathfinder). Returns
+    (prims, found). Single-floor only -- returns (None, False) if the target sits
+    on a different floor (coverage tour can't reach it)."""
+    if "covtour" in ep.get("traces", {}):
+        tr = ep["traces"]["covtour"]
+        return tr["actions"], tr.get("reached", True)
+
+    ct.MP3D = mp3d
+    target = ep[ep["traces"]["tight"]["target_slot"]]
+    start = ep["start_pose"]
+    if abs(target["navpoint"][1] - start["position"][1]) >= 0.8:   # cross-floor
+        return None, False
+    grid = ct.Grid(sim.pathfinder, start["position"][1])
+    vps, _ = ct.compute_viewpoints(grid)
+    prims, found, _, _ = ct.run(sim, target, start, {"grid": grid, "vps": vps})
+    return prims, found
+
+
+# ---------------------------------------------------------------- flatten one trace
+def flatten_trace(sim, start_pose, prims, video, budget, instr, frames_root,
+                  write_frames=True):
+    """Replay a primitive trace; dump frames; emit per-decision records with the
+    live remaining budget re-stated at every step via `instr(remaining, first)`."""
     native = aggregate(prims)
 
-    video = f"{ep['episode_id']}_{regime}"
     vdir = os.path.join(frames_root, video)
     if write_frames:
         os.makedirs(vdir, exist_ok=True)
 
     # replay: frame_0 at start, then one frame after each native action
-    set_agent(sim, ep["start_pose"]["position"], ep["start_pose"]["yaw"])
+    set_agent(sim, start_pose["position"], start_pose["yaw"])
     frame_paths = []
 
     def save(idx):
@@ -144,14 +186,14 @@ def flatten_regime(sim, ep, regime, budget, frames_root, c1, c2, write_frames=Tr
     for k, act in enumerate(native):
         records.append({
             "video_id": f"{video}-{k}",
-            "q": instruction(c1, c2, remaining, first=(k == 0)),
+            "q": instr(remaining, first=(k == 0)),
             "a": f"The next action is {act['phrase']}.",
             "frames": frame_paths[:k + 1],
         })
         remaining -= act["prims"]
     records.append({
         "video_id": f"{video}-{len(native)}",
-        "q": instruction(c1, c2, remaining, first=(len(native) == 0)),
+        "q": instr(remaining, first=(len(native) == 0)),
         "a": "The next action is stop.",
         "frames": frame_paths[:len(native) + 1],
     })
@@ -171,6 +213,9 @@ def main():
                     help="tight budget = nearest + frac*(both-nearest)")
     ap.add_argument("--loose-margin", type=float, default=0.15,
                     help="loose budget = ceil(both_tour * (1+margin))")
+    ap.add_argument("--covtour-margin", type=float, default=0.15,
+                    help="covtour budget = ceil(covtour_steps * (1+margin)) "
+                         "when no budget is stored on the episode")
     ap.add_argument("--print-only", action="store_true",
                     help="print records to stdout, do not write frames/annotations")
     args = ap.parse_args()
@@ -186,20 +231,41 @@ def main():
         os.makedirs(frames_root, exist_ok=True)
 
     sim = make_sim(args.scene, args.mp3d)
+    write = not args.print_only
     all_records = []
     for ep in episodes:
+        eid = ep["episode_id"]
         c1, c2 = ep["G1"]["category"], ep["G2"]["category"]
         tight_b, loose_b = sample_budgets(
             ep["nearest_only"], ep["both_tour"], args.tight_frac, args.loose_margin)
-        budgets = {"tight": tight_b, "loose": loose_b}
-        for regime in ("tight", "loose"):
-            recs = flatten_regime(sim, ep, regime, budgets[regime],
-                                  frames_root, c1, c2,
-                                  write_frames=not args.print_only)
+        mg = functools.partial(instruction_multigoal, c1, c2)
+
+        # --- tight / loose (two-goal shortest distance) ---
+        for regime, budget in (("tight", tight_b), ("loose", loose_b)):
+            recs = flatten_trace(sim, ep["start_pose"], ep["traces"][regime]["actions"],
+                                 f"{eid}_{regime}", budget, mg, frames_root, write)
             all_records.extend(recs)
-            print(f"{ep['episode_id']} {regime}: budget={budgets[regime]} "
-                  f"-> {len(recs)} records "
+            print(f"{eid} {regime}: budget={budget} -> {len(recs)} records "
                   f"(nearest={ep['nearest_only']} both={ep['both_tour']})")
+
+        # --- covtour (single-target object search) ---
+        prims, found = covtour_trace(sim, ep, args.mp3d)
+        if prims is None:
+            print(f"{eid} covtour: SKIP (cross-floor target)")
+        elif not found:
+            print(f"{eid} covtour: SKIP (target not found in coverage tour)")
+        else:
+            cat = ep[ep["traces"]["tight"]["target_slot"]]["category"]
+            stored = ep.get("traces", {}).get("covtour", {}).get("budget")
+            cbud = int(stored) if stored is not None \
+                else math.ceil(len(prims) * (1.0 + args.covtour_margin))
+            recs = flatten_trace(sim, ep["start_pose"], prims,
+                                 f"{eid}_covtour", cbud,
+                                 functools.partial(instruction_search, cat),
+                                 frames_root, write)
+            all_records.extend(recs)
+            print(f"{eid} covtour: target={cat} budget={cbud} "
+                  f"prims={len(prims)} -> {len(recs)} records")
     sim.close()
 
     if args.print_only:

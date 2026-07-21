@@ -32,6 +32,7 @@ CELL = 0.5                       # occupancy cell size (coarser = faster frontie
 REVEAL_R = 2.0                   # FOV reveal radius, <= SEE_R (no reveal-away w/o a detectable look)
 SEE_R = 2.0                      # target "found" within this geodesic distance...
 HALF_FOV = math.radians(45.0)    # ...and inside this half-FOV cone (camera hfov ~90deg)
+FACE_TOL = math.radians(TURN_DEG / 2.0)  # end facing the target: center it within half a turn-step
 LEG_CAP = 300                    # per-frontier-leg follower cap (anti-stuck, not behavioural)
 SAFETY_STEPS = 3000              # total-primitive safety valve (bug backstop; logged if hit)
 SCAN_EVERY = 12                  # mid-leg 360deg glance every N forward steps (~3m travel)
@@ -71,6 +72,24 @@ def fwd_xz(sim):
     q = sim.get_agent(0).get_state().rotation
     theta = 2.0 * math.atan2(q.y, q.w)
     return -math.sin(theta), -math.cos(theta)
+
+
+def turn_to_face(sim, target, prims):
+    """Turn in place until the target center is within FACE_TOL of the camera
+    forward axis, so the final (stop) frame has the agent facing the goal.
+    Appends the turn primitives to `prims`; caps at one full revolution."""
+    for _ in range(TURNS_360):
+        ap = apos(sim)
+        vx, vz = target["center"][0] - ap[0], target["center"][2] - ap[2]
+        n = math.hypot(vx, vz)
+        if n < 1e-6:
+            return
+        fx, fz = fwd_xz(sim)
+        if (vx * fx + vz * fz) / n >= math.cos(FACE_TOL):
+            return
+        act = "turn_right" if (fx * vz - fz * vx) > 0 else "turn_left"
+        sim.step(act)
+        prims.append(act)
 
 
 def geo(pf, a, b):
@@ -281,6 +300,9 @@ def explore(sim, target, start_pose):
         if look_around(sim, pf, target, grid, prims):
             found = True
             break
+
+    if found:
+        turn_to_face(sim, target, prims)        # end the trace facing the goal
 
     final_dist = float(geo(pf, apos(sim), target["navpoint"]))
     return {

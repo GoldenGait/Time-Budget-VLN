@@ -25,6 +25,7 @@ CELL = 0.5
 VIS_R = 2.0          # a viewpoint "sees" nav cells within this radius + LoS (== SEE_R)
 SEE_R = 2.0          # target found within this geodesic distance + LoS
 HALF_FOV = math.radians(45.0)
+FACE_TOL = math.radians(TURN_DEG / 2.0)  # end facing the target: center it within half a turn-step
 LEG_CAP = 400
 TURNS_360 = int(round(360.0 / TURN_DEG))
 
@@ -120,13 +121,15 @@ def detect(sim, pf, target, fy):
 
 
 def turn_to_face(sim, target, prims):
+    """Center the target within FACE_TOL of forward (not just inside the wide
+    detect cone) so the final stop frame has the agent facing the goal."""
     for _ in range(TURNS_360):
         ap = apos(sim); vx, vz = target["center"][0] - ap[0], target["center"][2] - ap[2]
         n = math.hypot(vx, vz)
         if n < 1e-6: return
         fx, fz = fwd_xz(sim)
-        if (vx * fx + vz * fz) / n >= math.cos(HALF_FOV): return
-        act = "turn_left" if (fx * vz - fz * vx) > 0 else "turn_right"
+        if (vx * fx + vz * fz) / n >= math.cos(FACE_TOL): return
+        act = "turn_right" if (fx * vz - fz * vx) > 0 else "turn_left"
         sim.step(act); prims.append(act)
 
 
