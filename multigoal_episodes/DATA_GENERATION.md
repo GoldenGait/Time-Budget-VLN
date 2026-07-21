@@ -127,8 +127,8 @@ unknown:
 completeness guarantee (the ~5% give-ups).
 
 ### B2 — `covtour`: coverage-tour over precomputed viewpoints  🧪 prototype only
-**Prototype:** `scratchpad/coverage_tour_demo.py` (not yet promoted to repo) · would be
-`traces.covtour`
+**Prototype:** `scripts/coverage_tour_demo.py` (in repo as a demo; not yet wired into the
+batch pipeline) · would write `traces.covtour`
 
 Instead of *emergent* frontier search, precompute a route that is **guaranteed** to see
 everything:
@@ -218,7 +218,7 @@ test_heldout (whole-scene holdout).
 |---|---|---|---|
 | Shortest-dist `tight`/`loose` | `generate_episodes.py` | ✅ | Dataset A, complete |
 | Frontier `explore` | `generate_frontier_episodes.py` | ⚠️ untracked | B1, smoke-validated, needs scale-out |
-| Coverage-tour `covtour` | `scratchpad/coverage_tour_demo.py` | ❌ prototype | B2, not promoted |
+| Coverage-tour `covtour` | `coverage_tour_demo.py` | ✅ (demo) | B2, standalone demo, not yet in batch pipeline |
 | Budget assignment | `assign_budgets.py` | ⚠️ untracked | Layer 1.5 |
 | SFT flattener | `build_sft_dataset.py` | ✅ | Layer 2 |
 | Egocentric frames + annotations | — (build output) | ❌ external HDD | the actual training data |
