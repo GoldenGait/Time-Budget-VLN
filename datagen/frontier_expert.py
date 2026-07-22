@@ -62,9 +62,12 @@ def normalize_cat(name, prior):
 
 
 # ---------------------------------------------------------------- sim
-def make_sim(stem, gpu=0):
+def make_sim(stem, gpu=0, glb=None):
     b = habitat_sim.SimulatorConfiguration()
-    b.scene_dataset_config_file = CFG; b.scene_id = stem
+    if glb:
+        b.scene_id = glb                                 # MP3D: load the .glb directly (semantics auto-load)
+    else:
+        b.scene_dataset_config_file = CFG; b.scene_id = stem   # HM3D: via annotated config
     b.gpu_device_id = gpu; b.enable_physics = False
     s = habitat_sim.CameraSensorSpec()
     s.uuid = "depth"; s.sensor_type = habitat_sim.SensorType.DEPTH
@@ -201,11 +204,11 @@ class Grid:
 
 
 # ---------------------------------------------------------------- expert
-def explore(sim, ep, targets, prior, objmap):
+def explore(sim, ep, targets, prior, scene_objs):
     pf = sim.pathfinder
     cat = ep["category"]
     tgt = targets[cat]
-    tgt_ids = set(tgt["object_ids"])
+    tgt_ids = set(tgt.get("object_ids", []))             # HM3D only; unused now (geometric detection)
     tgt_vps = np.asarray(tgt["viewpoints"], np.float32)
     tgt_obj = np.asarray(tgt["object_positions"], np.float32)
     follower = habitat_sim.GreedyGeodesicFollower(pf, sim.get_agent(0), goal_radius=0.5,
@@ -220,11 +223,18 @@ def explore(sim, ep, targets, prior, objmap):
         grid.reveal_depth(depth, float(p[0]), float(p[2]), fx, fz)
 
     def observe():
-        # DISABLED: the HM3D-Sem v0.2 semantic sensor renders all-zeros in this habitat-sim
-        # build, so runtime object observation is impossible. Room-voting (P_sem) is therefore
-        # inert for now (frontier score falls back to info-gain + geodesic). It will be restored
-        # via an offline .semantic.glb mesh parse that yields object positions + categories.
-        return
+        """Record non-target objects within reveal radius, from positions baked into the episode
+        JSON (MP3D obb.center). Empty on HM3D (semantic sensor dead) -> voting stays off there.
+        Enables P(room|object) frontier voting."""
+        if not scene_objs:
+            return
+        p = apos(sim)
+        for mp, ox, oz in scene_objs:
+            key = (round(ox, 2), round(oz, 2))
+            if key in observed or mp == cat:
+                continue
+            if math.hypot(ox - p[0], oz - p[2]) <= REVEAL_R:
+                observed[key] = (mp, [ox, oz])
 
     def near_viewpoint():
         p = apos(sim)
@@ -353,7 +363,7 @@ def explore(sim, ep, targets, prior, objmap):
 
     return {"category": cat, "start_position": ep["start_position"], "start_yaw": ep["start_yaw"],
             "actions": prims, "steps": len(prims), "found": bool(found), "giveup": giveup,
-            "n_observed": len(observed), "n_scene_objs": len(objmap),
+            "n_observed": len(observed), "n_scene_objs": len(scene_objs),
             "leg_ends": leg_ends, "T_loose": len(prims),
             "T_tight": leg_ends[0] if leg_ends else len(prims),
             "frontier_log": frontier_log}
@@ -395,12 +405,12 @@ def main():
         eps = sc["episodes"][: a.max_eps] if a.max_eps else sc["episodes"]
         if not eps:
             continue
-        sim = make_sim(stem, a.gpu)
-        objmap = scene_object_map(sim, prior)
+        sim = make_sim(stem, a.gpu, glb=sc.get("glb"))
+        scene_objs = sc.get("objects", [])               # baked [cat,x,z] positions (MP3D); [] on HM3D
         traces = []
         for ep in eps:
             import time as _t; t0 = _t.time()
-            tr = explore(sim, ep, sc["targets"], prior, objmap)
+            tr = explore(sim, ep, sc["targets"], prior, scene_objs)
             tr["episode_id"] = ep["episode_id"]; traces.append(tr)
             tot += 1; found += tr["found"]
             print(f"    {stem} {ep['episode_id']:12s} found={tr['found']!s:5} T={tr['T_loose']:4d} "
